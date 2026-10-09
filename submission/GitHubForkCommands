@@ -1,0 +1,27 @@
+MacOS:
+  brew install gh
+
+Windows PowerShell:
+   winget install --id GitHub.cli --source winget
+
+gh --version
+
+gh auth login --web --git-protocol https
+
+### Update OpenCSUSM64511 with your student ID 
+gh repo fork TheArchitect2000/CloudLLM-CloudSec \
+  --fork-name OpenCSUSM64511 \
+  --clone \
+  --default-branch-only
+
+cd /Users/evanpetersen/Downloads/446/OpenCSUSM64511
+
+mkdir -p submission
+
+### Copy some files in OpenCSUSM64511
+
+git add submission
+
+git commit -m "Add final project files for OpenCSUSM64511"
+
+git push -u origin HEAD
